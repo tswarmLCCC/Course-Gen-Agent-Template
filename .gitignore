@@ -4,6 +4,7 @@ __pycache__/
 
 # Local build artifacts
 build/
+_cartridge_build/
 scratch/
 legacy/
 autoBuildTest/

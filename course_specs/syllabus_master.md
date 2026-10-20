@@ -1,118 +1,129 @@
-# CMAP 1815: Master Syllabus & 8-Week Hybrid Schedule
+# AINT 2050: Master Syllabus & 8-Week Modular Schedule
 
-## Course Structure: The 300-Minute Hybrid Model
-Each week is budgeted for **300 minutes of total structured instructional engagement**, precisely divided into:
-- **150 Minutes of Asynchronous Guided Learning**:
-  - Bite-sized video micro-lectures (5–10 mins each).
-  - Targeted PostgreSQL readings & FreeCodeCamp video chapters (see [Master External Resources Guide](file:///c:/dev/CMAP_1815_Autogen/course_specs/external_resources_guide.md)).
-  - Formative self-check knowledge checks before class.
-- **150 Minutes of Synchronous Active Learning & Practical Lab**:
-  - Either **two 75-minute sessions** (e.g., Tuesday/Thursday) or **one 150-minute block**.
-  - Instructor live-coding demonstrations and concept reinforcement.
-  - Paired coding lab exercises and debriefing.
-- *(Independent homework/capstone study occurs outside these 300 instructional contact minutes).*
+## Course Overview
+- **Course Prefix & Number:** AINT 2050
+- **Course Title:** Applied AI Agent Architectures: From Conversational Spark to LangGraph Systems
+- **Credit Hours:** 3.0 Semester Credit Hours
+- **Term:** Fall 2026
+- **Institution:** Laramie County Community College (LCCC)
+- **Instructional Format:** 8-Week Accelerated Hybrid (Active Learning)
 
 ---
 
-## 8-Week Master Schedule
+## Course Structure: The 300-Minute Hybrid Model
+Each week is budgeted for **300 minutes of total structured instructional engagement**:
+- **150 Minutes of Asynchronous Guided Learning**:
+  - Bite-sized video micro-lectures (5–10 mins each).
+  - Curated documentation readings & architectural design patterns (see [Master External Resources Guide](file:///c:/dev/Course-Gen-Agent-Template/course_specs/external_resources_guide.md)).
+  - Formative self-check knowledge checks with interactive collapsible accordions.
+  - Socratic AI practice drills using roleplay prompts.
+- **150 Minutes of Synchronous Active Learning & Practical Lab**:
+  - Either **two 75-minute sessions** (e.g., Tuesday/Thursday) or **one 150-minute block**.
+  - Instructor live-coding demonstrations and architecture reviews.
+  - Paired lab development and live-debugging clinics.
+- *(Independent homework/capstone engineering occurs outside these 300 instructional contact minutes).*
 
-### Week 1: Selection, Relational Foundations & AI Data Grounding
-* **Theme**: The Relational Model, Projection ("The Flashlight"), and Environment Setup.
+---
+
+## 8-Week Master Schedule: The Agency Spectrum
+
+### Week 1: Level 1 — The Agent Spectrum & Conversational Assistants (Gemini & Claude)
+* **Theme**: The Agent Taxonomy, Perception-Reasoning-Action loops, ReAct prompting pattern, Google Gemini (Gemini Spark, System Instructions, Function Calling), and Anthropic Claude (Tool Use, Artifacts, Computer Use).
 * **Difficulty Rating**: 1–2 / 5
 * **Async Guided Study (150 min)**:
-  - Micro-Video 1.1: The Relational Metaphor & RAG Data Grounding (8 min).
-  - Micro-Video 1.2: The Anatomy of SELECT, FROM & Semicolon Rules (7 min).
-  - Micro-Video 1.3: Column Projection, Aliases & Mathematical Expressions (8 min).
-  - Micro-Video 1.4: Removing Duplicates (DISTINCT) & Sorting (ORDER BY) (7 min).
-  - Readings: Neon PostgreSQL Tutorial, SELECT, ORDER BY, DISTINCT.
-  - Self-Check: 5-question pre-class check.
+  - Micro-Video 1.1: What Makes an Agent? Perception, Reasoning & Action Loops (8 min).
+  - Micro-Video 1.2: The ReAct Pattern: Synergizing Reasoning and Acting in LLMs (8 min).
+  - Micro-Video 1.3: Google Gemini Spark vs. Anthropic Claude Tooling Paradigms (7 min).
+  - Micro-Video 1.4: Pure-Python ReAct Implementation: Scratchpads & Tool Execution (7 min).
+  - Readings: Yao et al. (ReAct Paper), Anthropic Tool Use Guide, Google Gemini Function Calling Reference.
+  - Formative Self-Checks: 5-question ReAct trace and tool payload prediction drills.
+  - Socratic AI Drill: "Agent Zero on Prompt Chaining vs. Autonomous Tool Use".
 * **Sync Active Lab (150 min)**:
-  - Session 1 (75 min): Codespaces setup, `psql` shell, schema exploration via `information_schema`.
-  - Session 2 (75 min): Live coding SELECT queries, column aliases, math operations, and ORDER BY drills.
-  - Lab Activity: Data Exploration & System Catalogs Lab (`week1_orientation.sql`).
-* **Deliverable**: Lab 1 SQL Script + Unit 1 Quiz.
+  - Session 1 (75 min): Architecture breakdown: Parsing tool definitions (`tools` schema) and dispatching Python function calls.
+  - Session 2 (75 min): Live-coding a pure-Python ReAct loop with calculator, weather, and database tools.
+  - Lab Activity: Pure-Python Multi-Tool ReAct Agent Lab.
+* **Deliverable**: Lab 1 Python Script + Unit 1 Quiz.
 
-### Week 2: Targeted Retrieval, Pattern Matching & Three-Valued Logic
-* **Theme**: Precision Filtering ("The Scalpel") and Boolean Logic Gates.
+### Week 2: Level 2 — Visual Workflow Automation with n8n
+* **Theme**: Visual orchestration, n8n AI Agent nodes, tool nodes, memory nodes, webhook triggers, and enterprise API integrations without raw code.
 * **Difficulty Rating**: 2–3 / 5
 * **Async Guided Study (150 min)**:
-  - Micro-Videos: WHERE clause mechanics; Pattern matching (`LIKE`, wildcards `%`, `_`); Three-Valued Logic (`IS NULL` vs `= NULL`); LIMIT & FETCH.
-  - Readings: Neon WHERE, LIKE, IN, BETWEEN, IS NULL, LIMIT.
-  - Self-Check: Evaluating truth tables with NULLs.
+  - Micro-Videos: Visual node architectures, n8n AI Agent component breakdown, connecting LLMs to REST APIs.
+  - Readings: n8n AI Agent Documentation, LangChain integration in n8n.
 * **Sync Active Lab (150 min)**:
-  - Session 1 (75 min): Complex WHERE conditions, operator precedence (AND before OR).
-  - Session 2 (75 min): Targeted data extraction and wildcards in practice.
-  - Lab Activity: The Census & Server Log Audit Lab.
-* **Deliverable**: Lab 2 SQL Script + Unit 2 Quiz.
+  - Session 1 (75 min): Setting up local/cloud n8n workflows with OpenAI/Gemini chat nodes.
+  - Session 2 (75 min): Building an automated customer support triaging agent with external webhooks and Slack/email notifications.
+  - Lab Activity: n8n Autonomous Customer Operations Agent Lab.
+* **Deliverable**: Lab 2 Exported Workflow JSON & Walkthrough Report + Unit 2 Quiz.
 
-### Week 3: Relational Interconnectivity (Joins)
-* **Theme**: Entity Relationships, Primary/Foreign Key Bridges, and Anomaly Detection.
+### Week 3: Level 2 — Visual Graph Prototyping with Langflow
+* **Theme**: Component-based AI pipelines, Langflow canvas, prompt chaining, document vector stores, and custom component scripting.
+* **Difficulty Rating**: 2–3 / 5
+* **Async Guided Study (150 min)**:
+  - Micro-Videos: Langflow visual interface, RAG pipelines, agentic routing in visual graphs.
+  - Readings: Langflow Core Concepts, Flowise comparison.
+* **Sync Active Lab (150 min)**:
+  - Session 1 (75 min): Designing visual agent graphs with memory buffers and custom Python components.
+  - Session 2 (75 min): Exporting visual flows to Python code and integrating into API endpoints.
+  - Lab Activity: Langflow Enterprise Knowledge Assistant Lab.
+* **Deliverable**: Lab 3 Langflow Flow Package + Unit 3 Quiz.
+
+### Week 4: Level 3 — Code-First Stateful Agent Graphs (LangGraph Core)
+* **Theme**: Moving beyond linear DAGs to cyclical state graphs. LangGraph architecture: `StateGraph`, `TypedDict` state schema, nodes, normal edges, and conditional routing edges.
 * **Difficulty Rating**: 3–4 / 5
 * **Async Guided Study (150 min)**:
-  - Micro-Videos: ERD Navigation; INNER JOIN mechanics; Outer Joins (LEFT, RIGHT, FULL); The Anti-Join pattern (`LEFT JOIN ... WHERE key IS NULL`).
-  - Readings: Neon Joins, INNER JOIN, LEFT JOIN, Table Aliases.
+  - Micro-Videos: Why DAGs fail for complex agents; StateGraph fundamentals; Nodes as pure functions; Conditional edges for loop routing.
+  - Readings: LangGraph Conceptual Guides, LangGraph Glossary.
 * **Sync Active Lab (150 min)**:
-  - Session 1 (75 min): 2-table and 3-table INNER JOINs; table aliasing best practices.
-  - Session 2 (75 min): Outer joins and identifying missing customer/product relationships.
-  - Lab Activity: 4-Table Superstore Integration & Missing Records Audit.
-* **Deliverable**: Lab 3 SQL Script + Unit 3 Quiz.
+  - Session 1 (75 min): Defining custom state schemas with `Annotated` reducers; compiling StateGraphs.
+  - Session 2 (75 min): Implementing conditional branching: routing between research, drafting, and critique loops.
+  - Lab Activity: LangGraph Cyclical Code Debugging Agent Lab.
+* **Deliverable**: Lab 4 Python Script + Unit 4 Quiz (Midterm Architecture Checkpoint).
 
-### Week 4: Summarization, Aggregations & Pivoting
-* **Theme**: Transforming Granular Rows into Executive Summaries.
-* **Difficulty Rating**: 3–5 / 5
-* **Async Guided Study (150 min)**:
-  - Micro-Videos: Aggregate Functions (`COUNT`, `SUM`, `AVG`, `MIN`, `MAX`); The `GROUP BY` boundary; `WHERE` vs `HAVING`; Set Operations (`UNION`); Introduction to Conditional Aggregation (`CASE` inside `SUM`).
-  - Readings: Neon GROUP BY, HAVING, Aggregate Functions, UNION.
-* **Sync Active Lab (150 min)**:
-  - Session 1 (75 min): Aggregation patterns and common `GROUP BY` compilation errors.
-  - Session 2 (75 min): Set operations and conditional aggregation matrix pivoting.
-  - Lab Activity: Executive Business Reporting & Pivoting Lab (Midterm Checkpoint).
-* **Deliverable**: Lab 4 SQL Script + Unit 4 Quiz.
-
-### Week 5: Safe Data Manipulation (DML) & Temporary Tables
-* **Theme**: Safe Data Engineering and Validation Protocols.
+### Week 5: Level 3 — Dynamic Tool Dispatch & Persistence in LangGraph
+* **Theme**: Pre-built LangGraph `ToolNode`, bind_tools, state persistence via checkpointers (MemorySaver, SqliteSaver), and conversation resumption.
 * **Difficulty Rating**: 3–4 / 5
 * **Async Guided Study (150 min)**:
-  - Micro-Videos: Anatomy of INSERT (VALUES vs SELECT); The Dangerous UPDATE & DELETE; The Golden Rule: Pre-Execution SELECTs; Staging with Temporary Tables (`TEMP TABLE`).
-  - Readings: Neon INSERT, UPDATE, DELETE, RETURNING.
+  - Micro-Videos: ReAct graphs in LangGraph; ToolNode execution; SQLite checkpointer persistence; Thread IDs and session tracking.
+  - Readings: LangGraph Tool Calling Reference, Persistence and Checkpointing.
 * **Sync Active Lab (150 min)**:
-  - Session 1 (75 min): Transaction blocks (`BEGIN`, `COMMIT`, `ROLLBACK`) and safe DML execution.
-  - Session 2 (75 min): Staging tables and multi-step data transformation workflows.
-  - Lab Activity: Data Cleanup & Safe Modification Protocol Lab.
-* **Deliverable**: Lab 5 SQL Script + Unit 5 Quiz.
+  - Session 1 (75 min): Building a production ReAct graph with custom Pydantic tools and SQLite memory.
+  - Session 2 (75 min): Resuming conversations across threads and inspecting state checkpoints.
+  - Lab Activity: Tool-Augmented Research Agent with Persistent SQLite Memory.
+* **Deliverable**: Lab 5 Python Script + Unit 5 Quiz.
 
-### Week 6: Query Modularity, CTEs & Window Functions
-* **Theme**: Modern Analytical SQL: Readable CTEs and Partitioned Windows.
+### Week 6: Level 4 — Multi-Agent Systems & Hierarchical Supervisors
+* **Theme**: Multi-agent collaboration, supervisor router pattern, specialized subagents (Researcher, Coder, Reviewer), and agent-to-agent message passing.
 * **Difficulty Rating**: 4–5 / 5
 * **Async Guided Study (150 min)**:
-  - Micro-Videos: Subqueries vs CTEs (`WITH`); The OVER() clause & `PARTITION BY`; Ranking functions (`ROW_NUMBER`, `RANK`); Running totals and moving averages.
-  - Readings: Neon CTE, Window Functions.
+  - Micro-Videos: Single agent vs multi-agent trade-offs; Supervisor architecture; State isolation; Router decision logic.
+  - Readings: LangGraph Multi-Agent Workflows, CrewAI / AutoGen comparative review.
 * **Sync Active Lab (150 min)**:
-  - Session 1 (75 min): Refactoring messy subqueries into sequential CTE pipelines.
-  - Session 2 (75 min): Window functions for cumulative metrics and deduplication.
-  - Lab Activity: Advanced Analytics & Deduplication Lab.
-* **Deliverable**: Lab 6 SQL Script + Unit 6 Quiz.
+  - Session 1 (75 min): Coding a multi-agent supervisor graph that delegates sub-tasks to specialized worker nodes.
+  - Session 2 (75 min): Aggregating worker outputs into a final synthesized report.
+  - Lab Activity: Multi-Agent Market Intelligence Team Lab.
+* **Deliverable**: Lab 6 Python Script + Unit 6 Quiz.
 
-### Week 7: Schema Design, DDL & Data Integrity
-* **Theme**: Architectural Blueprints, Normalization (1NF–3NF), and Constraint Enforcement.
-* **Difficulty Rating**: 3–4 / 5
+### Week 7: Enterprise Safety, Human-in-the-Loop & Governance
+* **Theme**: Safety governance, human-in-the-loop (HITL) breakpoints, state interrupts (`interrupt_before`, `interrupt_after`), time-travel state editing, and prompt injection defense.
+* **Difficulty Rating**: 4–5 / 5
 * **Async Guided Study (150 min)**:
-  - Micro-Videos: Normalization from spreadsheet chaos to 3NF; DDL (`CREATE TABLE`, `ALTER TABLE`); Enforcing integrity (PK, FK, CHECK, UNIQUE, NOT NULL); Views (`CREATE VIEW`).
-  - Readings: Neon CREATE TABLE, Data Types, Constraints, Views.
+  - Micro-Videos: Designing fail-safes for autonomous agents; Breakpoints and human approval gates; State rewind and time travel.
+  - Readings: LangGraph Human-in-the-loop Guide, OWASP Top 10 for LLM Applications.
 * **Sync Active Lab (150 min)**:
-  - Session 1 (75 min): Normalization workshop; identifying functional dependencies.
-  - Session 2 (75 min): Writing rock-solid DDL scripts and declaring foreign keys.
-  - Lab Activity: "The Denormalized Nightmare" DDL & Views Lab.
-* **Deliverable**: Lab 7 DDL Script + Unit 7 Quiz.
+  - Session 1 (75 min): Implementing interrupt hooks for sensitive actions (financial transfers, database modifications).
+  - Session 2 (75 min): Modifying graph state during interruption and resuming execution.
+  - Lab Activity: Human-in-the-Loop Financial Approval System Lab.
+* **Deliverable**: Lab 7 Python Script + Unit 7 Quiz.
 
-### Week 8: Query Performance, Indexing & Capstone Defense
-* **Theme**: Query Optimization, B-Tree Indexes, Audit Trails & Comprehensive Capstone.
-* **Difficulty Rating**: 2–5 / 5
+### Week 8: Production Deployment, Telemetry & Capstone Agent Defense
+* **Theme**: Telemetry and observability (LangSmith), benchmarking agent reliability, latency vs cost trade-offs, and Capstone Project defense.
+* **Difficulty Rating**: 3–5 / 5
 * **Async Guided Study (150 min)**:
-  - Micro-Videos: How Indexes Work (B-Trees); The Write Penalty (Index overhead on DML); Reading `EXPLAIN` query trees; Audit trails and change tracking.
-  - Readings: Neon Indexes, EXPLAIN.
+  - Micro-Videos: Observability in agent swarms; Tracing tool calls in LangSmith; Automated agent evaluation.
+  - Readings: LangSmith Evaluation Documentation, Production Agent Best Practices.
 * **Sync Active Lab (150 min)**:
-  - Session 1 (75 min): Query performance profiling and index tuning clinic.
-  - Session 2 (75 min): Capstone Architecture Review & Defense Presentations.
-  - Lab Activity: Comprehensive Capstone Project Execution.
-* **Deliverable**: Capstone Project Submission + Unit 8 Quiz.
+  - Session 1 (75 min): Setting up evaluation pipelines and measuring hallucination / tool failure rates.
+  - Session 2 (75 min): Live Capstone Agent architecture presentations, live demo runs, and defense.
+  - Lab Activity: Comprehensive Autonomous Agent Capstone Defense.
+* **Deliverable**: Final Capstone Submission + Capstone Live Defense.

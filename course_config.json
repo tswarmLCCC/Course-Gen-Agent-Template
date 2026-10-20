@@ -1,0 +1,41 @@
+{
+  "course_code": "AINT 2050",
+  "course_title": "Applied AI Agent Architectures: From Conversational Spark to LangGraph Systems",
+  "term": "Fall 2026",
+  "institution": "Laramie County Community College",
+  "domain": "lccc-wy.instructure.com",
+  "credits": "3.0 Credit Hours (Hybrid / Active Learning)",
+  "contact_hours_weekly": "300 Minutes (150 min Synchronous Lab + 150 min Asynchronous Guided Study)",
+  "description": "An accelerated, hands-on exploration of the modern AI Agent spectrum—advancing from prompt-driven conversational models (Gemini Spark, Anthropic Claude) through visual and low-code orchestration engines (n8n, Langflow), to production code-first stateful multi-agent graphs (LangGraph). Students design, prototype, evaluate, and deploy autonomous agents with tool use, memory, human-in-the-loop safeguards, and graph-based control flow.",
+  "outcomes": [
+    "CLO 1 (Agent Taxonomy & Prompt Architectures): Differentiate levels of agent autonomy and implement structured reasoning loops (ReAct, Plan-and-Solve) using foundation models (Google Gemini, Anthropic Claude).",
+    "CLO 2 (Visual & Low-Code Orchestration): Construct, debug, and automate multi-step agentic workflows and API integrations using visual platforms (n8n, Langflow).",
+    "CLO 3 (Stateful Graph Engineering): Architect cyclical, stateful agent workflows using code-first frameworks (LangGraph), defining typed states, routing nodes, conditional edges, and persistent checkpointers.",
+    "CLO 4 (Tool Integration & Action Dispatch): Design and execute robust tool-calling schemas (JSON Schema / Pydantic) with dynamic discovery, parameter validation, and exception fallback handling.",
+    "CLO 5 (Human-in-the-Loop & Safety Governance): Implement state interrupts, review breakpoints, permission gating, and rate limiting to ensure secure, deterministic agent behavior.",
+    "CLO 6 (Multi-Agent Systems & Evaluation): Coordinate multi-agent collaborative networks (hierarchical supervisors, specialized workers) and benchmark performance via automated evaluation suites."
+  ],
+  "assignment_groups": [
+    {
+      "key": "labs",
+      "name": "Hands-on Applied Agent Labs",
+      "weight": 40.0
+    },
+    {
+      "key": "capstone",
+      "name": "Comprehensive Agent Architecture Capstone",
+      "weight": 30.0
+    },
+    {
+      "key": "quizzes",
+      "name": "Unit Knowledge Checks & Architecture Quizzes",
+      "weight": 20.0
+    },
+    {
+      "key": "prep",
+      "name": "Asynchronous Preparation & Socratic AI Drills",
+      "weight": 10.0
+    }
+  ],
+  "grading_scale": "A: 90.0% – 100% | B: 80.0% – 89.9% | C: 70.0% – 79.9% | D: 60.0% – 69.9% | F: Below 60.0%"
+}

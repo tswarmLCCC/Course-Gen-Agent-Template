@@ -1,24 +1,12 @@
 {
-  "sqltools.connections": [
-    {
-      "name": "mydb",
-      "driver": "PostgreSQL",
-      "host": "db",
-      "port": 5432,
-      "database": "mydb",
-      "username": "postgres",
-      "password": "postgres"
-    },
-    {
-      "ssh": "Disabled",
-      "previewLimit": 50,
-      "server": "db",
-      "port": 5432,
-      "driver": "CockroachDB",
-      "name": "mydb",
-      "database": "mydb",
-      "username": "postgres",
-      "password": "postgres"
-    }
-  ]
+  "python.testing.pytestArgs": [
+    "units"
+  ],
+  "python.testing.unittestEnabled": false,
+  "python.testing.pytestEnabled": true,
+  "editor.formatOnSave": true,
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/.pytest_cache": true
+  }
 }

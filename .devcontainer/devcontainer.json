@@ -1,26 +1,26 @@
 {
-  "name": "Secure Student Dev Sandbox",
+  "name": "Python 3.11 Course Development Sandbox",
   "image": "mcr.microsoft.com/devcontainers/python:3.11",
 
   "customizations": {
     "vscode": {
       "settings": {
-        "terminal.integrated.defaultProfile.linux": "bash"
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "python.defaultInterpreterPath": "/usr/local/bin/python",
+        "editor.formatOnSave": true
       },
       "extensions": [
-        "ms-python.python"
+        "ms-python.python",
+        "ms-python.black-formatter"
       ]
     }
   },
 
-  // Security: Run as an unprivileged user, NOT root
   "remoteUser": "vscode",
 
-  // Security: Prevent container processes from acquiring new privileges
   "runArgs": [
     "--security-opt", "no-new-privileges:true"
   ],
 
-  // Automatically install required course packages upon first creation
-  "postCreateCommand": "pip install --upgrade pip && pip install jupyter pandas numpy requests"
+  "postCreateCommand": "pip install --upgrade pip && pip install pytest python-pptx"
 }
